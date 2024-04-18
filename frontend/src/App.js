@@ -1,4 +1,5 @@
 import React from 'react';
+import Note from './components/note';
 
 const App = () => {
   return (
@@ -15,10 +16,15 @@ const App = () => {
           className="block shadow w-full mx-auto my-2 px-2 py-4 rounded-lg"
           type="text"
         />
-        <button className="bg-yellow-400 text-2xl px-2 rounded py-1">
+        <button className="bg-yellow-400 text-xl px-2 rounded py-1">
           Add Note
         </button>
       </form>
+      <div className="grid grid-cols-4 gap-4 py-2">
+        <Note title="First Note" content="This is my first note" />
+        <Note title="First Note" content="This is my first note" />
+        <Note title="First Note" content="This is my first note" />
+      </div>
     </div>
   );
 };
